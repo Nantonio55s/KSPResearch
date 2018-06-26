@@ -18,14 +18,14 @@
 #
 
 from NodeClass import Node
-from readFile import read_file
+from readFile import read_file_n
 # from EdgeClass import Edge
 
 b_list = Node(2, 3, 5.2, 2.1, 1.2)
-listing = read_file("Distance.txt")
+listing = read_file_n("Distance")
 listing[0].dec_print()
 print "OOOOOOOOOOOOOOO"
-listing[1].dec_print()
+listing[0].dec_print()
 
 
 
