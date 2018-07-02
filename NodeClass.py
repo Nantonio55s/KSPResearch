@@ -9,7 +9,7 @@
 
 class Node:
 
-    def __init__(self, curr_node, next_node, weight, reliability, accident ):
+    def __init__(self, curr_node, next_node, weight, reliability, accident):
 
         # next node stores the number assigned to the next node
         self.next_node = next_node
@@ -21,7 +21,11 @@ class Node:
         self.weight = weight
         # stores the accident factor of the edge
         self.accident = accident
-        self.name="Node"
+        self.name = "Node"
+        self.prev_node = 0
+        self.p_reliability = 0
+        self.p_weight = 0
+        self.p_accident = 0
 
     def dec_print(self):
         print("The node's name is: ")

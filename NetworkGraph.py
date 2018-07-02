@@ -13,5 +13,9 @@ class NetworkGraph:
 	def print_graph(self,graph_list,reliable_graph):
 		glen=graph_list.len
 		G=nx.Graph()
+		i=0
+		while i<reliable_graph.len:
+			G.add_edge(reliable_graph[i].curr_node, reliable_graph[i].next_node)
+
 
 
