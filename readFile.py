@@ -55,7 +55,7 @@ def read_file_n(filename):
         line_read[i][2] = line_read[i][2].split("\n")
         # print line_read[i]
         # creates a new node that stores the values
-        nodelist.append(Node(int(line_read[0][0]), int(line_read[0][1]), float(line_read[0][2][0]), 0, 0))
+        nodelist.append(Node(int(line_read[i][0]), int(line_read[i][1]), float(line_read[i][2][0]), 0, 0, "Item"))
 
         # defines the previous node info based on the previous values
         # nodelist[i].name = namelist[i]

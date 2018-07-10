@@ -8,9 +8,13 @@
 
 
 class Node:
+    node_amt = 0
+    link_amt = 0
 
-    def __init__(self, curr_node, next_node, weight, reliability, accident):
+    def __init__(self, curr_node, next_node, weight, reliability, accident, name):
 
+        self.node_amt += 1
+        self.link_amt += 1
         # next node stores the number assigned to the next node
         self.next_node = next_node
         # next node weight stores the value between current node and the next node
@@ -26,6 +30,7 @@ class Node:
         self.p_reliability = 0
         self.p_weight = 0
         self.p_accident = 0
+        self.name = name
 
     def dec_print(self):
         print("The node's name is: ")

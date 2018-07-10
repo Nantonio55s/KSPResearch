@@ -9,13 +9,17 @@
 import networkx as nx
 import matplotlib.pyplot as plt
 
+
 class NetworkGraph:
-	def print_graph(self,graph_list,reliable_graph):
-		glen=graph_list.len
-		G=nx.Graph()
-		i=0
-		while i<reliable_graph.len:
-			G.add_edge(reliable_graph[i].curr_node, reliable_graph[i].next_node)
 
+	def __init__(self, graph_list, reliable_graph):
+			self.graph_list = graph_list
+			self.reliable_path = reliable_graph
 
+	def print_graph(self):
+		# glen = self.graph_list.len
+		g = nx.Graph()
+		i = 0
+		while i < self.reliable_graph.len:
+			g.add_edge(self.reliable_graph[i].curr_node, self.reliable_graph[i].next_node)
 

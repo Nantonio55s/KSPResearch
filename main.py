@@ -16,16 +16,21 @@
 #
 #
 #
-
+from UserInterfaceClass import UserInterface
 from NodeClass import Node
 from readFile import read_file_n
+# from NetworkGraph import print_graph
 # from EdgeClass import Edge
 
-b_list = Node(2, 3, 5.2, 2.1, 1.2)
+b_list = Node(2, 3, 5.2, 2.1, 1.2, "Ejemplo")
+
 listing = read_file_n("Distance")
 listing[0].dec_print()
+print "WOLOLO"
+listing[5].dec_print()
+# G= NetworkGraph()
+# G.print_graph()
 print "OOOOOOOOOOOOOOO"
+window = UserInterface((listing[2]), 1)
+window.make_window()
 listing[0].dec_print()
-
-
-
